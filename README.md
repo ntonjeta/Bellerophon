@@ -1,27 +1,38 @@
 # README #
 
 
-### What is this repository for? ###
+### Introduction ###
 
-* Bellerophont is a genetic optimization tools thinking for approximate computing.
-* 0.1
+Bellerophont is a genetic optimization tools thinking for approximate computing.
 
-### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+### HOW TO USE ###
 
-### Contribution guidelines ###
+## Requirement ##
 
-* Writing tests
-* Code review
-* Other guidelines
+Bellerophon requires LLVM3.9.1 compiled with following flag: 
 
-### Who do I talk to? ###
+* -DLLVM_ENABLE_CXX1Y=true
+* -DLLVM_ENABLE_RTTI=ON
 
-* Repo owner or admin
-* Other community or team contact
+Furthermore requires a Genetic Algorithm framework ParadisEO avaiable at this link:
+ 
+* http://paradiseo.gforge.inria.fr/
+
+
+## build ##
+
+    git clone https://github.com/ntonjeta/Bellerophon
+    cd Bellerophon
+    mkdir build
+    cmake ../ 
+    make
+
+
+### LICENSE ###
+
+* [GPLV3.0] https://www.gnu.org/licenses/licenses.html
+
+### Contributing ###
+
+Github is for social coding: if you want to write code, I encourage contributions through pull requests from forks of this repository. 
