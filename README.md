@@ -10,10 +10,13 @@
 
 
 Bellerophont is a genetic optimization tools thinking for approximate computing.
+It is think for use in collaboration with [clang-Chimera] (https://github.com/ntonjeta/clang-chimera). clang-Chimera provide to code mutation and Bellerophon use Genetic Algorithm for found the pareto-front of possible approximation. 
+
+More details of Bellerophon implementation can found on my master's thesis 
+[Link](null) 
 
 
-### How to use ###
--------------
+### Install ###
 
 #### Requirement ####
 -------------
@@ -28,7 +31,7 @@ Furthermore requires Genetic Algorithm framework ParadisEO avaiable at this link
 * http://paradiseo.gforge.inria.fr/
 
 
-### Build ###
+#### Build ####
 --------
 
     git clone https://github.com/ntonjeta/Bellerophon
@@ -36,6 +39,11 @@ Furthermore requires Genetic Algorithm framework ParadisEO avaiable at this link
     mkdir build
     cmake ../ 
     make
+
+#### example #### 
+
+You can test a simple exampe provide in example folder, simply run the launch script.
+The example use bit lenght reduction approximate tecnhnique provide by [FLAP library] (https://github.com/Ghost047/Fap) 
 
 ### LICENSE ###
 --------
