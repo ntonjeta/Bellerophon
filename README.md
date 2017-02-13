@@ -1,14 +1,19 @@
-# README #
+BELLEROPHON A EVOLUTION SEARCH ENGINE FOR APPROXIMATE COMPUTING
+==============================================================
 
 
-### Introduction ###
+Introduction
+------------
+
 
 Bellerophont is a genetic optimization tools thinking for approximate computing.
 
 
-### HOW TO USE ###
+HOW TO USE
+-------------
 
-## Requirement ##
+Requirement 
+-------------
 
 Bellerophon requires LLVM3.9.1 compiled with following flag: 
 
@@ -20,7 +25,8 @@ Furthermore requires a Genetic Algorithm framework ParadisEO avaiable at this li
 * http://paradiseo.gforge.inria.fr/
 
 
-## build ##
+build 
+--------
 
     git clone https://github.com/ntonjeta/Bellerophon
     cd Bellerophon
@@ -28,11 +34,12 @@ Furthermore requires a Genetic Algorithm framework ParadisEO avaiable at this li
     cmake ../ 
     make
 
-
-### LICENSE ###
+LICENSE 
+--------
 
 * [GPLV3.0] https://www.gnu.org/licenses/licenses.html
 
-### Contributing ###
+Contributing
+----------
 
 Github is for social coding: if you want to write code, I encourage contributions through pull requests from forks of this repository. 
