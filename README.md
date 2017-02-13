@@ -40,7 +40,7 @@ Furthermore requires Genetic Algorithm framework ParadisEO avaiable at this link
     cmake ../ 
     make
 
-#### example #### 
+#### example ##### 
 
 You can test a simple exampe provide in example folder, simply run the launch script.
 The example use bit lenght reduction approximate tecnhnique provide by [FLAP library] (https://github.com/Ghost047/Fap) 
