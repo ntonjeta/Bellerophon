@@ -40,7 +40,7 @@ Furthermore requires Genetic Algorithm framework ParadisEO avaiable at this link
 ### LICENSE ###
 --------
 
-* [GPLV3.0] https://www.gnu.org/licenses/licenses.html
+* [GPLV3.0](https://www.gnu.org/licenses/licenses.html)
 
 ### Contributing ###
 ----------
