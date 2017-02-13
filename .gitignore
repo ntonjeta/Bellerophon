@@ -27,3 +27,11 @@
 *.exe
 *.out
 *.app
+
+
+lib/*
+build/*
+.kdev4/*
+bellerophon.kdev4
+TODO.txt
+FlowShopEA.param

@@ -1,0 +1,2 @@
+OP_0,20,FLOAT,ADD,"p","OP_1","p"
+OP_1,20,FLOAT,MUL,"a[i]","b[i]","NULL"

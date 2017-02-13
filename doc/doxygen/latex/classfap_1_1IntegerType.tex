@@ -1,0 +1,94 @@
+\hypertarget{classfap_1_1IntegerType}{}\section{fap\+:\+:Integer\+Type Class Reference}
+\label{classfap_1_1IntegerType}\index{fap\+::\+Integer\+Type@{fap\+::\+Integer\+Type}}
+
+
+Class for integer type.  
+
+
+
+
+{\ttfamily \#include $<$fap.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classfap_1_1IntegerType_aeac24f8c6a124e8ab4d8f233999b6e75}{}\label{classfap_1_1IntegerType_aeac24f8c6a124e8ab4d8f233999b6e75} 
+{\footnotesize template$<$typename int\+Type $>$ }\\\hyperlink{classfap_1_1IntegerType_aeac24f8c6a124e8ab4d8f233999b6e75}{Integer\+Type} (int\+Type i, Integer\+Precision n\+\_\+prec=sizeof(int\+Type) $\ast$8, bool c=false)
+\begin{DoxyCompactList}\small\item\em Take a compatible int128\+\_\+t. \end{DoxyCompactList}\item 
+\hypertarget{classfap_1_1IntegerType_afbad8ab1cc63c0e9daf7c4e48daf665f}{}\label{classfap_1_1IntegerType_afbad8ab1cc63c0e9daf7c4e48daf665f} 
+int128\+\_\+t {\bfseries get\+Bits} () const
+\item 
+\hypertarget{classfap_1_1IntegerType_aea461efbbd2a42cd9c2aeaa20821a39e}{}\label{classfap_1_1IntegerType_aea461efbbd2a42cd9c2aeaa20821a39e} 
+int128\+\_\+t {\bfseries get\+Actual\+Bits} () const
+\item 
+\hypertarget{classfap_1_1IntegerType_a75227818e2b98aa0c38917783f3d942e}{}\label{classfap_1_1IntegerType_a75227818e2b98aa0c38917783f3d942e} 
+void {\bfseries set\+Bits} (int128\+\_\+t bits)
+\item 
+\hypertarget{classfap_1_1IntegerType_a4704f69882690d796e62a7cbed28eee2}{}\label{classfap_1_1IntegerType_a4704f69882690d796e62a7cbed28eee2} 
+int {\bfseries get\+Actual\+Precision} () const
+\item 
+\hypertarget{classfap_1_1IntegerType_a2958b19d948cadd0ede00b48b4dc0b24}{}\label{classfap_1_1IntegerType_a2958b19d948cadd0ede00b48b4dc0b24} 
+void {\bfseries set\+Actual\+Precision} (Integer\+Precision actual\+Precision)
+\item 
+\hypertarget{classfap_1_1IntegerType_a84cae1be58ac753fe7b3ec7ab1057787}{}\label{classfap_1_1IntegerType_a84cae1be58ac753fe7b3ec7ab1057787} 
+int {\bfseries get\+Ori\+Precision} () const
+\item 
+\hypertarget{classfap_1_1IntegerType_af24e56344bd02988028519d49bc3988a}{}\label{classfap_1_1IntegerType_af24e56344bd02988028519d49bc3988a} 
+void {\bfseries set\+Ori\+Precision} (Integer\+Precision ori\+Precision)
+\item 
+\hypertarget{classfap_1_1IntegerType_ac63aa7c1e115d7a95299f5ff2ca07fda}{}\label{classfap_1_1IntegerType_ac63aa7c1e115d7a95299f5ff2ca07fda} 
+uint8\+\_\+t {\bfseries get\+Neglected\+Bits\+Status} () const
+\item 
+\hypertarget{classfap_1_1IntegerType_a5754ff7a541bc36f8ca38244d701b3a0}{}\label{classfap_1_1IntegerType_a5754ff7a541bc36f8ca38244d701b3a0} 
+void {\bfseries set\+Neglected\+Bits\+Status} (uint8\+\_\+t neglected\+Bits\+Status)
+\item 
+\hypertarget{classfap_1_1IntegerType_a55a1e4f164760d48eb8ec2aad94952b3}{}\label{classfap_1_1IntegerType_a55a1e4f164760d48eb8ec2aad94952b3} 
+bool {\bfseries is\+Compensate} () const
+\item 
+\hypertarget{classfap_1_1IntegerType_aeffb9ae55abaeb1c94c2c1b4351ddb5a}{}\label{classfap_1_1IntegerType_aeffb9ae55abaeb1c94c2c1b4351ddb5a} 
+void {\bfseries set\+Compensate} (bool compensate)
+\item 
+\hypertarget{classfap_1_1IntegerType_a892054b1decc10cf328dd45585c0fd3a}{}\label{classfap_1_1IntegerType_a892054b1decc10cf328dd45585c0fd3a} 
+{\footnotesize template$<$typename int\+Type $>$ }\\\hyperlink{classfap_1_1IntegerType_a892054b1decc10cf328dd45585c0fd3a}{operator int\+Type} () const
+\begin{DoxyCompactList}\small\item\em Conversion to integer types. \end{DoxyCompactList}\item 
+\hypertarget{classfap_1_1IntegerType_ae499b68158996f18fb2846074f26e1c9}{}\label{classfap_1_1IntegerType_ae499b68158996f18fb2846074f26e1c9} 
+\hyperlink{classfap_1_1IntegerType}{Integer\+Type} \& {\bfseries operator+=} (\hyperlink{classfap_1_1IntegerType}{Integer\+Type})
+\item 
+\hypertarget{classfap_1_1IntegerType_af143333990ebe27a5d3db8f9adf7efa2}{}\label{classfap_1_1IntegerType_af143333990ebe27a5d3db8f9adf7efa2} 
+\hyperlink{classfap_1_1IntegerType}{Integer\+Type} \& {\bfseries operator-\/=} (\hyperlink{classfap_1_1IntegerType}{Integer\+Type})
+\item 
+\hypertarget{classfap_1_1IntegerType_a59cf32dd2fd3d40f0dad1298ae8ab695}{}\label{classfap_1_1IntegerType_a59cf32dd2fd3d40f0dad1298ae8ab695} 
+\hyperlink{classfap_1_1IntegerType}{Integer\+Type} \& {\bfseries operator$\ast$=} (\hyperlink{classfap_1_1IntegerType}{Integer\+Type})
+\item 
+\hypertarget{classfap_1_1IntegerType_a8cca2cd5d84bdbd07ef50136c0080d89}{}\label{classfap_1_1IntegerType_a8cca2cd5d84bdbd07ef50136c0080d89} 
+\hyperlink{classfap_1_1IntegerType}{Integer\+Type} \& {\bfseries operator/=} (\hyperlink{classfap_1_1IntegerType}{Integer\+Type})
+\item 
+\hypertarget{classfap_1_1IntegerType_a5bd62775586223484f294471638d2752}{}\label{classfap_1_1IntegerType_a5bd62775586223484f294471638d2752} 
+void \hyperlink{classfap_1_1IntegerType_a5bd62775586223484f294471638d2752}{change\+Prec} (Integer\+Precision)
+\begin{DoxyCompactList}\small\item\em Change the precision of this integer. \end{DoxyCompactList}\item 
+\hypertarget{classfap_1_1IntegerType_a4386e9a24064ec296049c64b4fe6c50f}{}\label{classfap_1_1IntegerType_a4386e9a24064ec296049c64b4fe6c50f} 
+void \hyperlink{classfap_1_1IntegerType_a4386e9a24064ec296049c64b4fe6c50f}{adapt\+Prec} (\hyperlink{classfap_1_1IntegerType}{Integer\+Type} \&i)
+\begin{DoxyCompactList}\small\item\em Adapt the precision of this and {\ttfamily i} \hyperlink{classfap_1_1IntegerType}{Integer\+Type} to the lowest. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classfap_1_1IntegerType_ab5d184366bb718da845cd767865da61b}{}\label{classfap_1_1IntegerType_ab5d184366bb718da845cd767865da61b} 
+\hyperlink{classfap_1_1IntegerType}{Integer\+Type} {\bfseries operator+} (\hyperlink{classfap_1_1IntegerType}{Integer\+Type} lhs, const \hyperlink{classfap_1_1IntegerType}{Integer\+Type} \&rhs)
+\item 
+\hypertarget{classfap_1_1IntegerType_a398e1d696e8eeb50208c855abd492088}{}\label{classfap_1_1IntegerType_a398e1d696e8eeb50208c855abd492088} 
+\hyperlink{classfap_1_1IntegerType}{Integer\+Type} {\bfseries operator-\/} (\hyperlink{classfap_1_1IntegerType}{Integer\+Type} lhs, const \hyperlink{classfap_1_1IntegerType}{Integer\+Type} \&rhs)
+\item 
+\hypertarget{classfap_1_1IntegerType_ad70b97ca16a41669c7da478d22d8c43f}{}\label{classfap_1_1IntegerType_ad70b97ca16a41669c7da478d22d8c43f} 
+\hyperlink{classfap_1_1IntegerType}{Integer\+Type} {\bfseries operator$\ast$} (\hyperlink{classfap_1_1IntegerType}{Integer\+Type} lhs, const \hyperlink{classfap_1_1IntegerType}{Integer\+Type} \&rhs)
+\item 
+\hypertarget{classfap_1_1IntegerType_a4879249fce29faf02fa86b39c0301304}{}\label{classfap_1_1IntegerType_a4879249fce29faf02fa86b39c0301304} 
+\hyperlink{classfap_1_1IntegerType}{Integer\+Type} {\bfseries operator/} (\hyperlink{classfap_1_1IntegerType}{Integer\+Type} lhs, const \hyperlink{classfap_1_1IntegerType}{Integer\+Type} \&rhs)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for integer type. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ntonjeta/sharedfolder/bellerophon/include/\+Plugins/\+F\+L\+A\+P/fap.\+h\end{DoxyCompactItemize}

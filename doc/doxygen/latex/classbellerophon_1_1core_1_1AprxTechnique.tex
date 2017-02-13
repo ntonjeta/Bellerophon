@@ -1,0 +1,105 @@
+\hypertarget{classbellerophon_1_1core_1_1AprxTechnique}{}\section{bellerophon\+:\+:core\+:\+:Aprx\+Technique Class Reference}
+\label{classbellerophon_1_1core_1_1AprxTechnique}\index{bellerophon\+::core\+::\+Aprx\+Technique@{bellerophon\+::core\+::\+Aprx\+Technique}}
+
+
+Interface that abstracts an approximation strategy.  
+
+
+
+
+{\ttfamily \#include $<$Aprx\+Technique.\+h$>$}
+
+Inheritance diagram for bellerophon\+:\+:core\+:\+:Aprx\+Technique\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classbellerophon_1_1core_1_1AprxTechnique}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbellerophon_1_1core_1_1AprxTechnique_ac495163cbd5c3479a425650f6a3c0371}{}\label{classbellerophon_1_1core_1_1AprxTechnique_ac495163cbd5c3479a425650f6a3c0371} 
+{\bfseries Aprx\+Technique} (Aprx\+Technique\+Id\+Ty id)
+\item 
+\hypertarget{classbellerophon_1_1core_1_1AprxTechnique_a3afc9a467f5211a83d68b96014eff290}{}\label{classbellerophon_1_1core_1_1AprxTechnique_a3afc9a467f5211a83d68b96014eff290} 
+Aprx\+Technique\+Id\+Ty {\bfseries get\+Id} () const
+\item 
+\hypertarget{classbellerophon_1_1core_1_1AprxTechnique_a655d22746c4cbe25f99599de1a299ff7}{}\label{classbellerophon_1_1core_1_1AprxTechnique_a655d22746c4cbe25f99599de1a299ff7} 
+void {\bfseries set\+Id} (Aprx\+Technique\+Id\+Ty id)
+\item 
+virtual \+::std\+::vector$<$\+::std\+::string $>$ \hyperlink{classbellerophon_1_1core_1_1AprxTechnique_a834c99b86f8f9cdd1f411c685b36a275}{apply\+Approximation} (\+::bellerophon\+::core\+::\+Aprx\+Grade) const
+\begin{DoxyCompactList}\small\item\em Apply an approximation. \end{DoxyCompactList}\item 
+\hypertarget{classbellerophon_1_1core_1_1AprxTechnique_a797384b5484b0277f5268bbf4e23aa7c}{}\label{classbellerophon_1_1core_1_1AprxTechnique_a797384b5484b0277f5268bbf4e23aa7c} 
+virtual void \hyperlink{classbellerophon_1_1core_1_1AprxTechnique_a797384b5484b0277f5268bbf4e23aa7c}{apply\+Approximation} (\+::bellerophon\+::core\+::\+Aprx\+Grade, \+::std\+::vector$<$ uint64\+\_\+t $>$) const =0
+\begin{DoxyCompactList}\small\item\em Apply approximation using the addresses of variables. \end{DoxyCompactList}\item 
+virtual \+::std\+::vector$<$\+::std\+::string $>$ \hyperlink{classbellerophon_1_1core_1_1AprxTechnique_a5d78bfe611a2e1884fd66f06ccde84d7}{get\+Global\+Value\+Names} () const
+\begin{DoxyCompactList}\small\item\em Used with G\+L\+O\+B\+A\+L\+\_\+\+V\+A\+L\+U\+E\+\_\+\+M\+O\+D\+I\+F\+I\+C\+A\+T\+I\+ON approximation mode. \end{DoxyCompactList}\item 
+virtual \+::bellerophon\+::core\+::\+Aprx\+Grade \hyperlink{classbellerophon_1_1core_1_1AprxTechnique_a6bcebd487e19b535ee4097d21f7df5db}{get\+Max\+Applicable\+Grade} () const =0
+\begin{DoxyCompactList}\small\item\em Get the maximum approximation grade. \end{DoxyCompactList}\item 
+\hypertarget{classbellerophon_1_1core_1_1AprxTechnique_a715a29fa676a36b3a96fbce5dbe1806b}{}\label{classbellerophon_1_1core_1_1AprxTechnique_a715a29fa676a36b3a96fbce5dbe1806b} 
+virtual void \hyperlink{classbellerophon_1_1core_1_1AprxTechnique_a715a29fa676a36b3a96fbce5dbe1806b}{dump} (\+::llvm\+::raw\+\_\+ostream \&) const =0
+\begin{DoxyCompactList}\small\item\em Dump information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbellerophon_1_1core_1_1AprxTechnique_a87301666e78094fc18da8b719b3d5bca}{}\label{classbellerophon_1_1core_1_1AprxTechnique_a87301666e78094fc18da8b719b3d5bca} 
+Aprx\+Technique\+Id\+Ty {\bfseries Id}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface that abstracts an approximation strategy. 
+
+It has to be implemented to create a context that is valid for an approximation strategy. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classbellerophon_1_1core_1_1AprxTechnique_a834c99b86f8f9cdd1f411c685b36a275}{}\label{classbellerophon_1_1core_1_1AprxTechnique_a834c99b86f8f9cdd1f411c685b36a275} 
+\index{bellerophon\+::core\+::\+Aprx\+Technique@{bellerophon\+::core\+::\+Aprx\+Technique}!apply\+Approximation@{apply\+Approximation}}
+\index{apply\+Approximation@{apply\+Approximation}!bellerophon\+::core\+::\+Aprx\+Technique@{bellerophon\+::core\+::\+Aprx\+Technique}}
+\subsubsection{\texorpdfstring{apply\+Approximation()}{applyApproximation()}}
+{\footnotesize\ttfamily virtual \+::std\+::vector$<$\+::std\+::string$>$ bellerophon\+::core\+::\+Aprx\+Technique\+::apply\+Approximation (\begin{DoxyParamCaption}\item[{\+::bellerophon\+::core\+::\+Aprx\+Grade}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Apply an approximation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & approximation grade \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String vector containing compiler arguments that represent the approximation 
+\end{DoxyReturn}
+\hypertarget{classbellerophon_1_1core_1_1AprxTechnique_a5d78bfe611a2e1884fd66f06ccde84d7}{}\label{classbellerophon_1_1core_1_1AprxTechnique_a5d78bfe611a2e1884fd66f06ccde84d7} 
+\index{bellerophon\+::core\+::\+Aprx\+Technique@{bellerophon\+::core\+::\+Aprx\+Technique}!get\+Global\+Value\+Names@{get\+Global\+Value\+Names}}
+\index{get\+Global\+Value\+Names@{get\+Global\+Value\+Names}!bellerophon\+::core\+::\+Aprx\+Technique@{bellerophon\+::core\+::\+Aprx\+Technique}}
+\subsubsection{\texorpdfstring{get\+Global\+Value\+Names()}{getGlobalValueNames()}}
+{\footnotesize\ttfamily virtual \+::std\+::vector$<$\+::std\+::string$>$ bellerophon\+::core\+::\+Aprx\+Technique\+::get\+Global\+Value\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Used with G\+L\+O\+B\+A\+L\+\_\+\+V\+A\+L\+U\+E\+\_\+\+M\+O\+D\+I\+F\+I\+C\+A\+T\+I\+ON approximation mode. 
+
+It provides the names of the global values that are required to be modified \hypertarget{classbellerophon_1_1core_1_1AprxTechnique_a6bcebd487e19b535ee4097d21f7df5db}{}\label{classbellerophon_1_1core_1_1AprxTechnique_a6bcebd487e19b535ee4097d21f7df5db} 
+\index{bellerophon\+::core\+::\+Aprx\+Technique@{bellerophon\+::core\+::\+Aprx\+Technique}!get\+Max\+Applicable\+Grade@{get\+Max\+Applicable\+Grade}}
+\index{get\+Max\+Applicable\+Grade@{get\+Max\+Applicable\+Grade}!bellerophon\+::core\+::\+Aprx\+Technique@{bellerophon\+::core\+::\+Aprx\+Technique}}
+\subsubsection{\texorpdfstring{get\+Max\+Applicable\+Grade()}{getMaxApplicableGrade()}}
+{\footnotesize\ttfamily virtual \+::bellerophon\+::core\+::\+Aprx\+Grade bellerophon\+::core\+::\+Aprx\+Technique\+::get\+Max\+Applicable\+Grade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the maximum approximation grade. 
+
+\begin{DoxyReturn}{Returns}
+Maximum approximation grade applicable 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classFlapAprxTechnique_af35c36c904e8c077c3fdf6bd35f5192c}{Flap\+Aprx\+Technique}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ntonjeta/sharedfolder/bellerophon/include/\+Core/Aprx\+Technique.\+h\end{DoxyCompactItemize}

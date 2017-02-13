@@ -1,0 +1,70 @@
+\hypertarget{classFlapAprxTechnique}{}\section{Flap\+Aprx\+Technique Class Reference}
+\label{classFlapAprxTechnique}\index{Flap\+Aprx\+Technique@{Flap\+Aprx\+Technique}}
+Inheritance diagram for Flap\+Aprx\+Technique\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFlapAprxTechnique}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classFlapAprxTechnique_aaf857d5880ae4252d4a2be9190728dde}{}\label{classFlapAprxTechnique_aaf857d5880ae4252d4a2be9190728dde} 
+{\bfseries Flap\+Aprx\+Technique} (unsigned id, const \+::std\+::string op\+Id, Operation\+Ret\+Type rt\+Ty=F\+L\+O\+AT, Operation\+Type ty=A\+DD)
+\item 
+\hypertarget{classFlapAprxTechnique_aa5e7f37d6fd6559dcdae936173ecf7c0}{}\label{classFlapAprxTechnique_aa5e7f37d6fd6559dcdae936173ecf7c0} 
+const \+::std\+::string \& {\bfseries get\+Op\+Id} () const
+\item 
+\hypertarget{classFlapAprxTechnique_a20a155653edc2ecb15a286ad20ad643c}{}\label{classFlapAprxTechnique_a20a155653edc2ecb15a286ad20ad643c} 
+void {\bfseries set\+Op\+Id} (const \+::std\+::string \&op\+Id)
+\item 
+\hypertarget{classFlapAprxTechnique_a136c31fac2f58cd89a9fd9d4dbece992}{}\label{classFlapAprxTechnique_a136c31fac2f58cd89a9fd9d4dbece992} 
+virtual \+::std\+::vector$<$\+::std\+::string $>$ {\bfseries get\+Global\+Value\+Names} () const override
+\item 
+\hypertarget{classFlapAprxTechnique_aefd2a4ab8d6ed9c92b34ff7860349590}{}\label{classFlapAprxTechnique_aefd2a4ab8d6ed9c92b34ff7860349590} 
+virtual void \hyperlink{classFlapAprxTechnique_aefd2a4ab8d6ed9c92b34ff7860349590}{apply\+Approximation} (\+::bellerophon\+::core\+::\+Aprx\+Grade, \+::std\+::vector$<$ uint64\+\_\+t $>$) const override
+\begin{DoxyCompactList}\small\item\em Apply approximation using the addresses of variables. \end{DoxyCompactList}\item 
+\hypertarget{classFlapAprxTechnique_a93c20ee12acf2d5f12960706c12000ab}{}\label{classFlapAprxTechnique_a93c20ee12acf2d5f12960706c12000ab} 
+virtual \+::std\+::vector$<$\+::std\+::string $>$ {\bfseries apply\+Approximation} (\+::bellerophon\+::core\+::\+Aprx\+Grade g) const override
+\item 
+virtual \+::bellerophon\+::core\+::\+Aprx\+Grade \hyperlink{classFlapAprxTechnique_af35c36c904e8c077c3fdf6bd35f5192c}{get\+Max\+Applicable\+Grade} () const override
+\begin{DoxyCompactList}\small\item\em Get the maximum approximation grade. \end{DoxyCompactList}\item 
+\hypertarget{classFlapAprxTechnique_a2d3dc7d3c0c44f6d49d51d2e460d298d}{}\label{classFlapAprxTechnique_a2d3dc7d3c0c44f6d49d51d2e460d298d} 
+virtual void \hyperlink{classFlapAprxTechnique_a2d3dc7d3c0c44f6d49d51d2e460d298d}{dump} (\+::llvm\+::raw\+\_\+ostream \&out=\+::llvm\+::outs()) const override
+\begin{DoxyCompactList}\small\item\em Dump information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classFlapAprxTechnique_a47a8663a3b30bd8c8236bc4d759df2ac}{}\label{classFlapAprxTechnique_a47a8663a3b30bd8c8236bc4d759df2ac} 
+\+::std\+::string {\bfseries Operand\+L\+HS}
+\item 
+\hypertarget{classFlapAprxTechnique_a776f631a4c4fba99575c6251a9e5d645}{}\label{classFlapAprxTechnique_a776f631a4c4fba99575c6251a9e5d645} 
+\+::std\+::string {\bfseries Operand\+R\+HS}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classFlapAprxTechnique_af35c36c904e8c077c3fdf6bd35f5192c}{}\label{classFlapAprxTechnique_af35c36c904e8c077c3fdf6bd35f5192c} 
+\index{Flap\+Aprx\+Technique@{Flap\+Aprx\+Technique}!get\+Max\+Applicable\+Grade@{get\+Max\+Applicable\+Grade}}
+\index{get\+Max\+Applicable\+Grade@{get\+Max\+Applicable\+Grade}!Flap\+Aprx\+Technique@{Flap\+Aprx\+Technique}}
+\subsubsection{\texorpdfstring{get\+Max\+Applicable\+Grade()}{getMaxApplicableGrade()}}
+{\footnotesize\ttfamily bellerophon\+::core\+::\+Aprx\+Grade Flap\+Aprx\+Technique\+::get\+Max\+Applicable\+Grade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the maximum approximation grade. 
+
+\begin{DoxyReturn}{Returns}
+Maximum approximation grade applicable 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbellerophon_1_1core_1_1AprxTechnique_a6bcebd487e19b535ee4097d21f7df5db}{bellerophon\+::core\+::\+Aprx\+Technique}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/ntonjeta/sharedfolder/bellerophon/include/\+Plugins/\+F\+L\+A\+P/Flap\+Aprx\+Technique.\+h\item 
+/home/ntonjeta/sharedfolder/bellerophon/src/\+Plugins/\+F\+L\+A\+P/Flap\+Aprx\+Technique.\+cpp\end{DoxyCompactItemize}

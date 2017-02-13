@@ -1,0 +1,139 @@
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger}{}\section{bellerophon\+:\+:log\+:\+:Bellerophon\+Logger Class Reference}
+\label{classbellerophon_1_1log_1_1BellerophonLogger}\index{bellerophon\+::log\+::\+Bellerophon\+Logger@{bellerophon\+::log\+::\+Bellerophon\+Logger}}
+
+
+Bellero\+Logger Class, provides all functions for the logging.  
+
+
+
+
+{\ttfamily \#include $<$Log.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classbellerophon_1_1log_1_1BellerophonLogger_a780401375c00ff261d6879d7ccf21861}{init} ()
+\begin{DoxyCompactList}\small\item\em Initialize the logging class. \end{DoxyCompactList}\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_a63d06acba380395bebdfe777ff131997}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_a63d06acba380395bebdfe777ff131997} 
+static void \hyperlink{classbellerophon_1_1log_1_1BellerophonLogger_a63d06acba380395bebdfe777ff131997}{init\+Verbose} ()
+\begin{DoxyCompactList}\small\item\em Enable the verbose level. \end{DoxyCompactList}\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_a60dfe793ccae33b38dc4871224455345}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_a60dfe793ccae33b38dc4871224455345} 
+static void \hyperlink{classbellerophon_1_1log_1_1BellerophonLogger_a60dfe793ccae33b38dc4871224455345}{init\+Trace} ()
+\begin{DoxyCompactList}\small\item\em Enable the debug level. \end{DoxyCompactList}\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_af3b35d9d5d7f387e247b5ee0661a8e07}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_af3b35d9d5d7f387e247b5ee0661a8e07} 
+static void {\bfseries init} (int argc, const char $\ast$$\ast$argv)
+\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_a9f42b16477dc255759e73a807c7bfaf6}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_a9f42b16477dc255759e73a807c7bfaf6} 
+static bool {\bfseries is\+Initialize} ()
+\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_ad9c0de45f7a15044ded052122af255c2}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_ad9c0de45f7a15044ded052122af255c2} 
+static void {\bfseries set\+Verbose\+Level} (Verbose\+Level vlevel)
+\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_a29d67e691ca3c1fa2eaa3ad57eebbb7e}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_a29d67e691ca3c1fa2eaa3ad57eebbb7e} 
+static void {\bfseries set\+Actual\+V\+Level} (Verbose\+Level vlevel)
+\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_a9c929f62357eb9c14192640afa80edd5}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_a9c929f62357eb9c14192640afa80edd5} 
+static void {\bfseries reset\+Actual\+V\+Level} ()
+\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_adc13b6d6b48df5c256881b55bf6c3824}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_adc13b6d6b48df5c256881b55bf6c3824} 
+static void {\bfseries incr\+Actual\+V\+Level} ()
+\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_a0bfc45fde13bb492ffe5da977d091bc9}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_a0bfc45fde13bb492ffe5da977d091bc9} 
+static void {\bfseries decr\+Actual\+V\+Level} ()
+\item 
+static void \hyperlink{classbellerophon_1_1log_1_1BellerophonLogger_ad498ff6881211ff767a187e149c6ef53}{verbose} (Verbose\+Level, const std\+::string \&msg)
+\begin{DoxyCompactList}\small\item\em Log a message for the Verbose level. \end{DoxyCompactList}\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_a40e7889408f1aad39c98de0a1309a532}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_a40e7889408f1aad39c98de0a1309a532} 
+static void \hyperlink{classbellerophon_1_1log_1_1BellerophonLogger_a40e7889408f1aad39c98de0a1309a532}{verbose} (const std\+::string \&msg)
+\begin{DoxyCompactList}\small\item\em Log a message in Verbose actual level. \end{DoxyCompactList}\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_a173f8c75a7279dbac4be17e917a53fa6}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_a173f8c75a7279dbac4be17e917a53fa6} 
+static void {\bfseries verbose} (const std\+::string \&\&msg)
+\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_a7a7378a416ea9c09dc654d4f2828f3ec}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_a7a7378a416ea9c09dc654d4f2828f3ec} 
+static void {\bfseries verbose\+And\+Incr} (const std\+::string \&msg)
+\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_a326d3902798758ba65913c3fc1126cae}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_a326d3902798758ba65913c3fc1126cae} 
+static void {\bfseries verbose\+And\+Incr} (const std\+::string \&\&msg)
+\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_aeca792a5bdf4d2a3a01ad7f6c9e9117e}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_aeca792a5bdf4d2a3a01ad7f6c9e9117e} 
+static void {\bfseries verbose\+And\+Decr} (const std\+::string \&msg)
+\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_a2b6f45cbc14a4e2fecb98286ab7fa6e1}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_a2b6f45cbc14a4e2fecb98286ab7fa6e1} 
+static void {\bfseries verbose\+And\+Decr} (const std\+::string \&\&msg)
+\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_a82ec294be519652ea15c950f659d3e2f}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_a82ec294be519652ea15c950f659d3e2f} 
+static void {\bfseries verbose\+Pre\+Decr} (const std\+::string \&msg)
+\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_a9484408b0e87ccb04afc026093c14cb4}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_a9484408b0e87ccb04afc026093c14cb4} 
+static void {\bfseries verbose\+Pre\+Decr} (const std\+::string \&\&msg)
+\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_adb4a8b2a17df0c6da35571fa26850d36}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_adb4a8b2a17df0c6da35571fa26850d36} 
+static void {\bfseries debug} (const std\+::string \&msg)
+\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_a0ef2e0d50b2a30b9d980f3dc4fcae41a}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_a0ef2e0d50b2a30b9d980f3dc4fcae41a} 
+static void {\bfseries debug} (const std\+::string \&\&msg)
+\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_a4787742f03add5f9fa92f4c395a0fc59}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_a4787742f03add5f9fa92f4c395a0fc59} 
+static void {\bfseries info} (const std\+::string \&msg)
+\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_a475efbcf3cf3e20c34707ec75a5b4b59}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_a475efbcf3cf3e20c34707ec75a5b4b59} 
+static void {\bfseries info} (const std\+::string \&\&msg)
+\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_ae9f80d59781394f85ff940f877b45130}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_ae9f80d59781394f85ff940f877b45130} 
+static void {\bfseries trace} (const std\+::string \&msg)
+\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_a96aad2634d0c3338abd27f49fbbbe668}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_a96aad2634d0c3338abd27f49fbbbe668} 
+static void {\bfseries trace} (const std\+::string \&\&msg)
+\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_ab7adf7e483d7a4f30a16331a65161efc}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_ab7adf7e483d7a4f30a16331a65161efc} 
+static void {\bfseries warning} (const std\+::string \&msg)
+\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_a5e23b3d06515dc2610660646e6c99f03}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_a5e23b3d06515dc2610660646e6c99f03} 
+static void {\bfseries warning} (const std\+::string \&\&msg)
+\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_a41a6707e911c46c3a78df45730cc6e95}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_a41a6707e911c46c3a78df45730cc6e95} 
+static void {\bfseries error} (const std\+::string \&msg)
+\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_a0586f437126dbc33643e2c71ac1f6b4d}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_a0586f437126dbc33643e2c71ac1f6b4d} 
+static void {\bfseries error} (const std\+::string \&\&msg)
+\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_a6fd49014f6c333644f54aff87b35ec9e}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_a6fd49014f6c333644f54aff87b35ec9e} 
+static void {\bfseries fatal} (const std\+::string \&msg)
+\item 
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_aace4d0e2028aa4464374053c6c558490}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_aace4d0e2028aa4464374053c6c558490} 
+static void {\bfseries fatal} (const std\+::string \&\&msg)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Bellero\+Logger Class, provides all functions for the logging. 
+
+Through this helper class, it\textquotesingle{}s simpler to use easylogging++. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_a780401375c00ff261d6879d7ccf21861}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_a780401375c00ff261d6879d7ccf21861} 
+\index{bellerophon\+::log\+::\+Bellerophon\+Logger@{bellerophon\+::log\+::\+Bellerophon\+Logger}!init@{init}}
+\index{init@{init}!bellerophon\+::log\+::\+Bellerophon\+Logger@{bellerophon\+::log\+::\+Bellerophon\+Logger}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void log\+::\+Bellerophon\+Logger\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Initialize the logging class. 
+
+Configure el++ \+: chimera\+Logger \hypertarget{classbellerophon_1_1log_1_1BellerophonLogger_ad498ff6881211ff767a187e149c6ef53}{}\label{classbellerophon_1_1log_1_1BellerophonLogger_ad498ff6881211ff767a187e149c6ef53} 
+\index{bellerophon\+::log\+::\+Bellerophon\+Logger@{bellerophon\+::log\+::\+Bellerophon\+Logger}!verbose@{verbose}}
+\index{verbose@{verbose}!bellerophon\+::log\+::\+Bellerophon\+Logger@{bellerophon\+::log\+::\+Bellerophon\+Logger}}
+\subsubsection{\texorpdfstring{verbose()}{verbose()}}
+{\footnotesize\ttfamily void log\+::\+Bellerophon\+Logger\+::verbose (\begin{DoxyParamCaption}\item[{Verbose\+Level}]{vlevel,  }\item[{const std\+::string \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Log a message for the Verbose level. 
+
+Verbose levels are from 0 to 9 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/ntonjeta/sharedfolder/bellerophon/include/\hyperlink{Log_8h}{Log.\+h}\item 
+/home/ntonjeta/sharedfolder/bellerophon/src/\hyperlink{Log_8cpp}{Log.\+cpp}\end{DoxyCompactItemize}

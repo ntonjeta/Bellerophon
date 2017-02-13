@@ -1,0 +1,195 @@
+\hypertarget{classbellerophon_1_1engine_1_1ExecutionEngineHelper}{}\section{bellerophon\+:\+:engine\+:\+:Execution\+Engine\+Helper Class Reference}
+\label{classbellerophon_1_1engine_1_1ExecutionEngineHelper}\index{bellerophon\+::engine\+::\+Execution\+Engine\+Helper@{bellerophon\+::engine\+::\+Execution\+Engine\+Helper}}
+
+
+Helper class to interact with the L\+L\+VM execution engine.  
+
+
+
+
+{\ttfamily \#include $<$Execution\+Engine\+Helper.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbellerophon_1_1engine_1_1ExecutionEngineHelper_acda31a25becaba3afd19312f43df054d}{}\label{classbellerophon_1_1engine_1_1ExecutionEngineHelper_acda31a25becaba3afd19312f43df054d} 
+\hyperlink{classbellerophon_1_1engine_1_1ExecutionEngineHelper_acda31a25becaba3afd19312f43df054d}{Execution\+Engine\+Helper} ()
+\begin{DoxyCompactList}\small\item\em Default ctor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a8bd642f019fd83f13ad986d9a95245db}{load\+Module} (\+::std\+::unique\+\_\+ptr$<$\+::llvm\+::\+Module $>$ M)
+\begin{DoxyCompactList}\small\item\em Add the module {\ttfamily M} to the current execution engine. If it doesn\textquotesingle{}t exist it is created. \end{DoxyCompactList}\item 
+bool \hyperlink{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a05a050cb41cc3bf48977f52300e3ae52}{set\+Compilation\+Database} (const \+::std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Take the path to a compilation database and load its compile commands. \end{DoxyCompactList}\item 
+bool \hyperlink{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a630f6808c11ca5c1dca005836af9ed59}{has\+Compile\+Command} (\+::llvm\+::\+String\+Ref filename)
+\begin{DoxyCompactList}\small\item\em Check if {\ttfamily filename} has a compile command among the internal ones. \end{DoxyCompactList}\item 
+int \hyperlink{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a9f68c7cf6f58e299de0a06d96ada4fb2}{run\+Function} (\+::llvm\+::\+Generic\+Value \&retval, \+::llvm\+::\+String\+Ref func\+Name, \+::llvm\+::\+Array\+Ref$<$\+::llvm\+::\+Generic\+Value $>$ args=\+::llvm\+::\+None)
+\begin{DoxyCompactList}\small\item\em Given a function name defined somewhere in the source files of which the compilation database have the compile commands, execute it and eventually returns its value. \end{DoxyCompactList}\item 
+\hypertarget{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a27e7e4fb1ba23cc31f4ff5e4aa227aa7}{}\label{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a27e7e4fb1ba23cc31f4ff5e4aa227aa7} 
+int \hyperlink{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a27e7e4fb1ba23cc31f4ff5e4aa227aa7}{compile\+And\+Run\+Function} (\+::llvm\+::\+Generic\+Value \&retval, \+::llvm\+::\+String\+Ref func\+Name, \+::llvm\+::\+Array\+Ref$<$\+::llvm\+::\+Generic\+Value $>$ args=\+::llvm\+::\+None)
+\begin{DoxyCompactList}\small\item\em Same as run\+Function but it previous performs the compilation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+uint64\+\_\+t \hyperlink{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a9b72393d74d77555c1306abbdd930007}{get\+Address} (\+::llvm\+::\+String\+Ref)
+\begin{DoxyCompactList}\small\item\em Get the address of a global value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a3254d7988bab8088f8cc22d02348748d}{}\label{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a3254d7988bab8088f8cc22d02348748d} 
+void {\bfseries set\+Additional\+Args} (const \+::std\+::vector$<$\+::std\+::string $>$ \&additional\+Args)
+\item 
+\hypertarget{classbellerophon_1_1engine_1_1ExecutionEngineHelper_af81d949184ac251787d6ace27a126302}{}\label{classbellerophon_1_1engine_1_1ExecutionEngineHelper_af81d949184ac251787d6ace27a126302} 
+void {\bfseries clear\+Additional\+Args} ()
+\item 
+\hypertarget{classbellerophon_1_1engine_1_1ExecutionEngineHelper_ab687776f25d2d1aa7bdb200bac479d7f}{}\label{classbellerophon_1_1engine_1_1ExecutionEngineHelper_ab687776f25d2d1aa7bdb200bac479d7f} 
+void {\bfseries set\+Obj\+Paths} (const \+::std\+::vector$<$\+::std\+::string $>$ \&object\+Paths)
+\item 
+\hypertarget{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a824596d478fccec3fd4d81a5dd4dba20}{}\label{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a824596d478fccec3fd4d81a5dd4dba20} 
+void {\bfseries add\+Obj\+Path} (const \+::std\+::string \&obj\+Path)
+\item 
+\hypertarget{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a555b5658918f2a14cbb03062531fdc24}{}\label{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a555b5658918f2a14cbb03062531fdc24} 
+void {\bfseries clear\+Obj\+Paths} ()
+\item 
+\hypertarget{classbellerophon_1_1engine_1_1ExecutionEngineHelper_ae256ea25e5844f8411911d5979af2a77}{}\label{classbellerophon_1_1engine_1_1ExecutionEngineHelper_ae256ea25e5844f8411911d5979af2a77} 
+void {\bfseries set\+Archive\+Paths} (const \+::std\+::vector$<$\+::std\+::string $>$ \&paths)
+\item 
+\hypertarget{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a741a12a635c41149af17fb291873ee73}{}\label{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a741a12a635c41149af17fb291873ee73} 
+void {\bfseries add\+Archive\+Path} (const \+::std\+::string \&path)
+\item 
+\hypertarget{classbellerophon_1_1engine_1_1ExecutionEngineHelper_ae6e8c69b6931c6a59e3baac42610f9d7}{}\label{classbellerophon_1_1engine_1_1ExecutionEngineHelper_ae6e8c69b6931c6a59e3baac42610f9d7} 
+void {\bfseries clear\+Archive\+Paths} ()
+\item 
+\hypertarget{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a002fdcd704a4b212aeba81b247f3740a}{}\label{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a002fdcd704a4b212aeba81b247f3740a} 
+void {\bfseries load\+Archive} (const \+::std\+::string \&path)
+\item 
+void \hyperlink{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a6df2a721afdf41dab67487a9ac5ec9ba}{load\+Obj} (const \+::std\+::string \&obj\+Path)
+\begin{DoxyCompactList}\small\item\em Load the objects contained in {\ttfamily obj\+Paths}. \end{DoxyCompactList}\item 
+\hypertarget{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a732a54bbac45e7df6e7afcf91bd7a8fd}{}\label{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a732a54bbac45e7df6e7afcf91bd7a8fd} 
+void {\bfseries load\+Objs} (const \+::std\+::vector$<$\+::std\+::string $>$ \&obj\+Paths)
+\item 
+\hypertarget{classbellerophon_1_1engine_1_1ExecutionEngineHelper_aad68e00a006a017fdfab64f7b8f8d366}{}\label{classbellerophon_1_1engine_1_1ExecutionEngineHelper_aad68e00a006a017fdfab64f7b8f8d366} 
+int {\bfseries compile} ()
+\end{DoxyCompactItemize}
+
+
+
+\subsection{Detailed Description}
+Helper class to interact with the L\+L\+VM execution engine. 
+
+It manages a compilation database which contains the compile commands for a bunch of source files. These file can be compiled and linked in order to execute a function defined in them. At the moment is not supported the linking phase in which an external library can be specified. T\+O\+DO\+: Support libraries 
+
+\subsection{Member Function Documentation}
+\hypertarget{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a9b72393d74d77555c1306abbdd930007}{}\label{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a9b72393d74d77555c1306abbdd930007} 
+\index{bellerophon\+::engine\+::\+Execution\+Engine\+Helper@{bellerophon\+::engine\+::\+Execution\+Engine\+Helper}!get\+Address@{get\+Address}}
+\index{get\+Address@{get\+Address}!bellerophon\+::engine\+::\+Execution\+Engine\+Helper@{bellerophon\+::engine\+::\+Execution\+Engine\+Helper}}
+\subsubsection{\texorpdfstring{get\+Address()}{getAddress()}}
+{\footnotesize\ttfamily uint64\+\_\+t bellerophon\+::engine\+::\+Execution\+Engine\+Helper\+::get\+Address (\begin{DoxyParamCaption}\item[{\+::llvm\+::\+String\+Ref}]{Name }\end{DoxyParamCaption})}
+
+
+
+Get the address of a global value. 
+
+\begin{DoxyReturn}{Returns}
+Equals to 0 if not founf 
+\end{DoxyReturn}
+\hypertarget{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a630f6808c11ca5c1dca005836af9ed59}{}\label{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a630f6808c11ca5c1dca005836af9ed59} 
+\index{bellerophon\+::engine\+::\+Execution\+Engine\+Helper@{bellerophon\+::engine\+::\+Execution\+Engine\+Helper}!has\+Compile\+Command@{has\+Compile\+Command}}
+\index{has\+Compile\+Command@{has\+Compile\+Command}!bellerophon\+::engine\+::\+Execution\+Engine\+Helper@{bellerophon\+::engine\+::\+Execution\+Engine\+Helper}}
+\subsubsection{\texorpdfstring{has\+Compile\+Command()}{hasCompileCommand()}}
+{\footnotesize\ttfamily bool bellerophon\+::engine\+::\+Execution\+Engine\+Helper\+::has\+Compile\+Command (\begin{DoxyParamCaption}\item[{\+::llvm\+::\+String\+Ref}]{filename }\end{DoxyParamCaption})}
+
+
+
+Check if {\ttfamily filename} has a compile command among the internal ones. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file that should have a compile command \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If {\ttfamily filename} has a compile command 
+\end{DoxyReturn}
+\hypertarget{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a8bd642f019fd83f13ad986d9a95245db}{}\label{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a8bd642f019fd83f13ad986d9a95245db} 
+\index{bellerophon\+::engine\+::\+Execution\+Engine\+Helper@{bellerophon\+::engine\+::\+Execution\+Engine\+Helper}!load\+Module@{load\+Module}}
+\index{load\+Module@{load\+Module}!bellerophon\+::engine\+::\+Execution\+Engine\+Helper@{bellerophon\+::engine\+::\+Execution\+Engine\+Helper}}
+\subsubsection{\texorpdfstring{load\+Module()}{loadModule()}}
+{\footnotesize\ttfamily bool bellerophon\+::engine\+::\+Execution\+Engine\+Helper\+::load\+Module (\begin{DoxyParamCaption}\item[{\+::std\+::unique\+\_\+ptr$<$\+::llvm\+::\+Module $>$}]{M }\end{DoxyParamCaption})}
+
+
+
+Add the module {\ttfamily M} to the current execution engine. If it doesn\textquotesingle{}t exist it is created. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em M} & A L\+L\+VM Module \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the set succeeds 
+\end{DoxyReturn}
+\hypertarget{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a6df2a721afdf41dab67487a9ac5ec9ba}{}\label{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a6df2a721afdf41dab67487a9ac5ec9ba} 
+\index{bellerophon\+::engine\+::\+Execution\+Engine\+Helper@{bellerophon\+::engine\+::\+Execution\+Engine\+Helper}!load\+Obj@{load\+Obj}}
+\index{load\+Obj@{load\+Obj}!bellerophon\+::engine\+::\+Execution\+Engine\+Helper@{bellerophon\+::engine\+::\+Execution\+Engine\+Helper}}
+\subsubsection{\texorpdfstring{load\+Obj()}{loadObj()}}
+{\footnotesize\ttfamily void bellerophon\+::engine\+::\+Execution\+Engine\+Helper\+::load\+Obj (\begin{DoxyParamCaption}\item[{const \+::std\+::string \&}]{obj\+Path }\end{DoxyParamCaption})}
+
+
+
+Load the objects contained in {\ttfamily obj\+Paths}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj\+Paths} & Paths to object files \\
+\hline
+\end{DoxyParams}
+\hypertarget{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a9f68c7cf6f58e299de0a06d96ada4fb2}{}\label{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a9f68c7cf6f58e299de0a06d96ada4fb2} 
+\index{bellerophon\+::engine\+::\+Execution\+Engine\+Helper@{bellerophon\+::engine\+::\+Execution\+Engine\+Helper}!run\+Function@{run\+Function}}
+\index{run\+Function@{run\+Function}!bellerophon\+::engine\+::\+Execution\+Engine\+Helper@{bellerophon\+::engine\+::\+Execution\+Engine\+Helper}}
+\subsubsection{\texorpdfstring{run\+Function()}{runFunction()}}
+{\footnotesize\ttfamily int bellerophon\+::engine\+::\+Execution\+Engine\+Helper\+::run\+Function (\begin{DoxyParamCaption}\item[{\+::llvm\+::\+Generic\+Value \&}]{retval,  }\item[{\+::llvm\+::\+String\+Ref}]{func\+Name,  }\item[{\+::llvm\+::\+Array\+Ref$<$\+::llvm\+::\+Generic\+Value $>$}]{args = {\ttfamily \+:\+:llvm\+:\+:None} }\end{DoxyParamCaption})}
+
+
+
+Given a function name defined somewhere in the source files of which the compilation database have the compile commands, execute it and eventually returns its value. 
+
+Using the J\+IT compiler of L\+L\+VM, the necessary files are just-\/in-\/time compiled, and then it is performed a linking phase and the {\ttfamily func\+Name} is executed passing {\ttfamily args} as arguments. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em retval} & Whatever the function returns \\
+\hline
+ & {\em func\+Name} & Name of the function to execute, it should be defined in the source files \\
+\hline
+ & {\em args} & Arguments to pass to the functions \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if succeeds, and then retval is properly set 1 otherwise 
+\end{DoxyReturn}
+\hypertarget{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a05a050cb41cc3bf48977f52300e3ae52}{}\label{classbellerophon_1_1engine_1_1ExecutionEngineHelper_a05a050cb41cc3bf48977f52300e3ae52} 
+\index{bellerophon\+::engine\+::\+Execution\+Engine\+Helper@{bellerophon\+::engine\+::\+Execution\+Engine\+Helper}!set\+Compilation\+Database@{set\+Compilation\+Database}}
+\index{set\+Compilation\+Database@{set\+Compilation\+Database}!bellerophon\+::engine\+::\+Execution\+Engine\+Helper@{bellerophon\+::engine\+::\+Execution\+Engine\+Helper}}
+\subsubsection{\texorpdfstring{set\+Compilation\+Database()}{setCompilationDatabase()}}
+{\footnotesize\ttfamily bool bellerophon\+::engine\+::\+Execution\+Engine\+Helper\+::set\+Compilation\+Database (\begin{DoxyParamCaption}\item[{const \+::std\+::string \&}]{path }\end{DoxyParamCaption})}
+
+
+
+Take the path to a compilation database and load its compile commands. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Path to the dir in which there is the compilation database \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the loading succeeds 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/ntonjeta/sharedfolder/bellerophon/include/\+Execution\+Engine\+Helper/Execution\+Engine\+Helper.\+h\item 
+/home/ntonjeta/sharedfolder/bellerophon/src/\+Execution\+Engine\+Helper/Execution\+Engine\+Helper.\+cpp\end{DoxyCompactItemize}

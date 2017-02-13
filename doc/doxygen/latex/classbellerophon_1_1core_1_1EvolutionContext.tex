@@ -1,0 +1,109 @@
+\hypertarget{classbellerophon_1_1core_1_1EvolutionContext}{}\section{bellerophon\+:\+:core\+:\+:Evolution\+Context Class Reference}
+\label{classbellerophon_1_1core_1_1EvolutionContext}\index{bellerophon\+::core\+::\+Evolution\+Context@{bellerophon\+::core\+::\+Evolution\+Context}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classbellerophon_1_1core_1_1EvolutionContext_aab5413234e99512ab0208539cf866a8a}{init\+Execution\+Engine} (const \+::std\+::string \&)
+\begin{DoxyCompactList}\small\item\em Init function for the internal execution engine. \end{DoxyCompactList}\item 
+int \hyperlink{classbellerophon_1_1core_1_1EvolutionContext_a13906d3491e042f84473f0b10283acdd}{initialize\+Aprx\+Context} (\+::std\+::string path)
+\begin{DoxyCompactList}\small\item\em Initialize the Aproximate Context. \end{DoxyCompactList}\item 
+void \hyperlink{classbellerophon_1_1core_1_1EvolutionContext_ad21ec88b2a31a98140b052dcb0352cc9}{initialize\+Evolution} (double tau)
+\begin{DoxyCompactList}\small\item\em Initialize the Evolution Parameter. \end{DoxyCompactList}\item 
+void \hyperlink{classbellerophon_1_1core_1_1EvolutionContext_a8ec4af08d2fa630cd1a6daa4e6400cc4}{add\+Obj} (const \+::std\+::string \&obj\+Path)
+\begin{DoxyCompactList}\small\item\em Add an object that will be loaded. \end{DoxyCompactList}\item 
+void \hyperlink{classbellerophon_1_1core_1_1EvolutionContext_aa100267fe3f388b794dfeb6d1c105c89}{print\+Result} ()
+\begin{DoxyCompactList}\small\item\em Apply the evolution algorithm. \end{DoxyCompactList}\item 
+\hypertarget{classbellerophon_1_1core_1_1EvolutionContext_a37196148355350b656ea458053a7f3be}{}\label{classbellerophon_1_1core_1_1EvolutionContext_a37196148355350b656ea458053a7f3be} 
+void \hyperlink{classbellerophon_1_1core_1_1EvolutionContext_a37196148355350b656ea458053a7f3be}{set\+Aprx\+Context} (const \+::std\+::shared\+\_\+ptr$<$\+::\hyperlink{classbellerophon_1_1core_1_1AprxContext}{bellerophon\+::core\+::\+Aprx\+Context} $>$ C)
+\begin{DoxyCompactList}\small\item\em Initialize the Aprx Context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbellerophon_1_1core_1_1EvolutionContext_a8ec4af08d2fa630cd1a6daa4e6400cc4}{}\label{classbellerophon_1_1core_1_1EvolutionContext_a8ec4af08d2fa630cd1a6daa4e6400cc4} 
+\index{bellerophon\+::core\+::\+Evolution\+Context@{bellerophon\+::core\+::\+Evolution\+Context}!add\+Obj@{add\+Obj}}
+\index{add\+Obj@{add\+Obj}!bellerophon\+::core\+::\+Evolution\+Context@{bellerophon\+::core\+::\+Evolution\+Context}}
+\subsubsection{\texorpdfstring{add\+Obj()}{addObj()}}
+{\footnotesize\ttfamily void bellerophon\+::core\+::\+Evolution\+Context\+::add\+Obj (\begin{DoxyParamCaption}\item[{const \+::std\+::string \&}]{obj\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add an object that will be loaded. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj\+Path} & Path to the object \\
+\hline
+\end{DoxyParams}
+\hypertarget{classbellerophon_1_1core_1_1EvolutionContext_aab5413234e99512ab0208539cf866a8a}{}\label{classbellerophon_1_1core_1_1EvolutionContext_aab5413234e99512ab0208539cf866a8a} 
+\index{bellerophon\+::core\+::\+Evolution\+Context@{bellerophon\+::core\+::\+Evolution\+Context}!init\+Execution\+Engine@{init\+Execution\+Engine}}
+\index{init\+Execution\+Engine@{init\+Execution\+Engine}!bellerophon\+::core\+::\+Evolution\+Context@{bellerophon\+::core\+::\+Evolution\+Context}}
+\subsubsection{\texorpdfstring{init\+Execution\+Engine()}{initExecutionEngine()}}
+{\footnotesize\ttfamily bool bellerophon\+::core\+::\+Evolution\+Context\+::init\+Execution\+Engine (\begin{DoxyParamCaption}\item[{const \+::std\+::string \&}]{cd\+Path }\end{DoxyParamCaption})}
+
+
+
+Init function for the internal execution engine. 
+
+Initialize the exectution Engine.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Compilation\+Database.\+json} & path \\
+\hline
+\end{DoxyParams}
+\hypertarget{classbellerophon_1_1core_1_1EvolutionContext_a13906d3491e042f84473f0b10283acdd}{}\label{classbellerophon_1_1core_1_1EvolutionContext_a13906d3491e042f84473f0b10283acdd} 
+\index{bellerophon\+::core\+::\+Evolution\+Context@{bellerophon\+::core\+::\+Evolution\+Context}!initialize\+Aprx\+Context@{initialize\+Aprx\+Context}}
+\index{initialize\+Aprx\+Context@{initialize\+Aprx\+Context}!bellerophon\+::core\+::\+Evolution\+Context@{bellerophon\+::core\+::\+Evolution\+Context}}
+\subsubsection{\texorpdfstring{initialize\+Aprx\+Context()}{initializeAprxContext()}}
+{\footnotesize\ttfamily int bellerophon\+::core\+::\+Evolution\+Context\+::initialize\+Aprx\+Context (\begin{DoxyParamCaption}\item[{\+::std\+::string}]{path }\end{DoxyParamCaption})}
+
+
+
+Initialize the Aproximate Context. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em report} & path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Satus Code 
+\end{DoxyReturn}
+\hypertarget{classbellerophon_1_1core_1_1EvolutionContext_ad21ec88b2a31a98140b052dcb0352cc9}{}\label{classbellerophon_1_1core_1_1EvolutionContext_ad21ec88b2a31a98140b052dcb0352cc9} 
+\index{bellerophon\+::core\+::\+Evolution\+Context@{bellerophon\+::core\+::\+Evolution\+Context}!initialize\+Evolution@{initialize\+Evolution}}
+\index{initialize\+Evolution@{initialize\+Evolution}!bellerophon\+::core\+::\+Evolution\+Context@{bellerophon\+::core\+::\+Evolution\+Context}}
+\subsubsection{\texorpdfstring{initialize\+Evolution()}{initializeEvolution()}}
+{\footnotesize\ttfamily void bellerophon\+::core\+::\+Evolution\+Context\+::initialize\+Evolution (\begin{DoxyParamCaption}\item[{double}]{tau }\end{DoxyParamCaption})}
+
+
+
+Initialize the Evolution Parameter. 
+
+Initialize Evolution algorithm.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & to parameter file  Initialize the Evolution Parameter from file specified by path \\
+\hline
+\end{DoxyParams}
+\hypertarget{classbellerophon_1_1core_1_1EvolutionContext_aa100267fe3f388b794dfeb6d1c105c89}{}\label{classbellerophon_1_1core_1_1EvolutionContext_aa100267fe3f388b794dfeb6d1c105c89} 
+\index{bellerophon\+::core\+::\+Evolution\+Context@{bellerophon\+::core\+::\+Evolution\+Context}!print\+Result@{print\+Result}}
+\index{print\+Result@{print\+Result}!bellerophon\+::core\+::\+Evolution\+Context@{bellerophon\+::core\+::\+Evolution\+Context}}
+\subsubsection{\texorpdfstring{print\+Result()}{printResult()}}
+{\footnotesize\ttfamily void bellerophon\+::core\+::\+Evolution\+Context\+::print\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Apply the evolution algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em taa} & double value constraint for generate error \textbackslash{} brief Print the result of evolution algorithm \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/ntonjeta/sharedfolder/bellerophon/include/\+Core/Evolution\+Context.\+h\item 
+/home/ntonjeta/sharedfolder/bellerophon/src/\+Core/Evolution\+Context.\+cpp\end{DoxyCompactItemize}

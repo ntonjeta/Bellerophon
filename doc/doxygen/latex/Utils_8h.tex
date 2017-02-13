@@ -1,0 +1,84 @@
+\hypertarget{Utils_8h}{}\section{/home/ntonjeta/sharedfolder/bellerophon/include/\+Utils.h File Reference}
+\label{Utils_8h}\index{/home/ntonjeta/sharedfolder/bellerophon/include/\+Utils.\+h@{/home/ntonjeta/sharedfolder/bellerophon/include/\+Utils.\+h}}
+
+
+This file contains a utility functions.  
+
+
+{\ttfamily \#include \char`\"{}llvm/\+A\+D\+T/\+Twine.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebellerophon_1_1fs}{bellerophon\+::fs}
+\begin{DoxyCompactList}\small\item\em Filesystem functions. \end{DoxyCompactList}\item 
+ \hyperlink{namespacebellerophon_1_1syntax}{bellerophon\+::syntax}
+\begin{DoxyCompactList}\small\item\em Syntax checker. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{Utils_8h_a60b7871e9e7675d9765daa9999245bb6}{bellerophon\+::conf\+::\+Fun\+Op\+Conf\+Map} = std\+::map$<$ std\+::string, std\+::vector$<$ std\+::string $>$$>$
+\begin{DoxyCompactList}\small\item\em For each function name contains the vector of operator to apply. The Fun\+Op configuration file is a csv file, in which the first element of every row is the name of a function that should be present in the source code, the others comma-\/separated value in the row are the operator\textquotesingle{}s identifier for the correspondent operator to use. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{Utils_8h_a404c92d6137c3bda40376e2da18a5bba}{bellerophon\+::conf\+::read\+Functions\+Operators\+Conf\+File} (const std\+::string \&filename, Fun\+Op\+Conf\+Map \&file\+Map)
+\begin{DoxyCompactList}\small\item\em Reaf a functions/operators configuration file and create a Fun\+Op\+Conf\+Map. \end{DoxyCompactList}\item 
+char \hyperlink{namespacebellerophon_1_1fs_a5fdf1fe521ee409381f36acf1457a858}{bellerophon\+::fs\+::get\+Path\+Separator} ()
+\item 
+std\+::string \hyperlink{namespacebellerophon_1_1fs_acd4c35b60168bc21d107608e56128664}{bellerophon\+::fs\+::get\+Parent\+Path} (const std\+::string \&)
+\begin{DoxyCompactList}\small\item\em Get the parent directory of a path. \end{DoxyCompactList}\item 
+bool \hyperlink{namespacebellerophon_1_1fs_a863646cc2d1337eb038f7fdb45012a3a}{bellerophon\+::fs\+::create\+Directories} (const llvm\+::\+Twine \&path, bool ignore\+Existing=true)
+\begin{DoxyCompactList}\small\item\em Create directories e sub-\/directories. \end{DoxyCompactList}\item 
+\hypertarget{namespacebellerophon_1_1fs_ad2da81a3ede3323f05544977de6d3408}{}\label{namespacebellerophon_1_1fs_ad2da81a3ede3323f05544977de6d3408} 
+void {\bfseries bellerophon\+::fs\+::delete\+Directory} (const llvm\+::\+Twine \&path)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespacebellerophon_1_1fs_a058ef4b019d24eea183b04e5da71c288}{}\label{namespacebellerophon_1_1fs_a058ef4b019d24eea183b04e5da71c288} 
+const char {\bfseries bellerophon\+::fs\+::path\+Sep}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains a utility functions. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Tammaro 
+\end{DoxyAuthor}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{Utils_8h_file_a60b7871e9e7675d9765daa9999245bb6}{}\label{Utils_8h_file_a60b7871e9e7675d9765daa9999245bb6} 
+\index{Utils.\+h@{Utils.\+h}!Fun\+Op\+Conf\+Map@{Fun\+Op\+Conf\+Map}}
+\index{Fun\+Op\+Conf\+Map@{Fun\+Op\+Conf\+Map}!Utils.\+h@{Utils.\+h}}
+\subsubsection{\texorpdfstring{Fun\+Op\+Conf\+Map}{FunOpConfMap}}
+{\footnotesize\ttfamily using \hyperlink{Utils_8h_a60b7871e9e7675d9765daa9999245bb6}{bellerophon\+::conf\+::\+Fun\+Op\+Conf\+Map} = typedef std\+::map$<$std\+::string, std\+::vector$<$std\+::string$>$$>$}
+
+
+
+For each function name contains the vector of operator to apply. The Fun\+Op configuration file is a csv file, in which the first element of every row is the name of a function that should be present in the source code, the others comma-\/separated value in the row are the operator\textquotesingle{}s identifier for the correspondent operator to use. 
+
+If the first element of the first row is empty, it\textquotesingle{}s possible to specify only the operators that will be applied to all functions found.
+
+To comment a configuration entry use -\/$>$ //. 
+
+\subsection{Function Documentation}
+\hypertarget{Utils_8h_file_a404c92d6137c3bda40376e2da18a5bba}{}\label{Utils_8h_file_a404c92d6137c3bda40376e2da18a5bba} 
+\index{Utils.\+h@{Utils.\+h}!read\+Functions\+Operators\+Conf\+File@{read\+Functions\+Operators\+Conf\+File}}
+\index{read\+Functions\+Operators\+Conf\+File@{read\+Functions\+Operators\+Conf\+File}!Utils.\+h@{Utils.\+h}}
+\subsubsection{\texorpdfstring{read\+Functions\+Operators\+Conf\+File()}{readFunctionsOperatorsConfFile()}}
+{\footnotesize\ttfamily bool bellerophon\+::conf\+::read\+Functions\+Operators\+Conf\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{\hyperlink{Utils_8h_a60b7871e9e7675d9765daa9999245bb6}{Fun\+Op\+Conf\+Map} \&}]{file\+Map }\end{DoxyParamCaption})}
+
+
+
+Reaf a functions/operators configuration file and create a Fun\+Op\+Conf\+Map. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & If some error is encountered. \\
+\hline
+\end{DoxyRetVals}

@@ -1,0 +1,75 @@
+\hypertarget{namespacebellerophon_1_1fs}{}\section{bellerophon\+:\+:fs Namespace Reference}
+\label{namespacebellerophon_1_1fs}\index{bellerophon\+::fs@{bellerophon\+::fs}}
+
+
+Filesystem functions.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{namespacebellerophon_1_1fs_a5fdf1fe521ee409381f36acf1457a858}{get\+Path\+Separator} ()
+\item 
+std\+::string \hyperlink{namespacebellerophon_1_1fs_acd4c35b60168bc21d107608e56128664}{get\+Parent\+Path} (const std\+::string \&)
+\begin{DoxyCompactList}\small\item\em Get the parent directory of a path. \end{DoxyCompactList}\item 
+bool \hyperlink{namespacebellerophon_1_1fs_a863646cc2d1337eb038f7fdb45012a3a}{create\+Directories} (const llvm\+::\+Twine \&path, bool ignore\+Existing=true)
+\begin{DoxyCompactList}\small\item\em Create directories e sub-\/directories. \end{DoxyCompactList}\item 
+\hypertarget{namespacebellerophon_1_1fs_ad2da81a3ede3323f05544977de6d3408}{}\label{namespacebellerophon_1_1fs_ad2da81a3ede3323f05544977de6d3408} 
+void {\bfseries delete\+Directory} (const llvm\+::\+Twine \&path)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespacebellerophon_1_1fs_a058ef4b019d24eea183b04e5da71c288}{}\label{namespacebellerophon_1_1fs_a058ef4b019d24eea183b04e5da71c288} 
+const char {\bfseries path\+Sep}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Filesystem functions. 
+
+\subsection{Function Documentation}
+\hypertarget{namespacebellerophon_1_1fs_a863646cc2d1337eb038f7fdb45012a3a}{}\label{namespacebellerophon_1_1fs_a863646cc2d1337eb038f7fdb45012a3a} 
+\index{bellerophon\+::fs@{bellerophon\+::fs}!create\+Directories@{create\+Directories}}
+\index{create\+Directories@{create\+Directories}!bellerophon\+::fs@{bellerophon\+::fs}}
+\subsubsection{\texorpdfstring{create\+Directories()}{createDirectories()}}
+{\footnotesize\ttfamily bool bellerophon\+::fs\+::create\+Directories (\begin{DoxyParamCaption}\item[{const llvm\+::\+Twine \&}]{path,  }\item[{bool}]{ignore\+Existing = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Create directories e sub-\/directories. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The directory to create \\
+\hline
+{\em ignore\+Existing} & If it has to be ignored path previous existence. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the directory is successfully created. 
+\end{DoxyReturn}
+\hypertarget{namespacebellerophon_1_1fs_acd4c35b60168bc21d107608e56128664}{}\label{namespacebellerophon_1_1fs_acd4c35b60168bc21d107608e56128664} 
+\index{bellerophon\+::fs@{bellerophon\+::fs}!get\+Parent\+Path@{get\+Parent\+Path}}
+\index{get\+Parent\+Path@{get\+Parent\+Path}!bellerophon\+::fs@{bellerophon\+::fs}}
+\subsubsection{\texorpdfstring{get\+Parent\+Path()}{getParentPath()}}
+{\footnotesize\ttfamily std\+::string bellerophon\+::fs\+::get\+Parent\+Path (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the parent directory of a path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacebellerophon_1_1fs_a5fdf1fe521ee409381f36acf1457a858}{}\label{namespacebellerophon_1_1fs_a5fdf1fe521ee409381f36acf1457a858} 
+\index{bellerophon\+::fs@{bellerophon\+::fs}!get\+Path\+Separator@{get\+Path\+Separator}}
+\index{get\+Path\+Separator@{get\+Path\+Separator}!bellerophon\+::fs@{bellerophon\+::fs}}
+\subsubsection{\texorpdfstring{get\+Path\+Separator()}{getPathSeparator()}}
+{\footnotesize\ttfamily char bellerophon\+::fs\+::get\+Path\+Separator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The os-\/specific path separator 
+\end{DoxyReturn}
