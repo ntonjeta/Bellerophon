@@ -40,9 +40,10 @@ Furthermore requires Genetic Algorithm framework ParadisEO avaiable at this link
     cmake ../ 
     make
 
-#### example ##### 
+#### Example ####
+-------- 
 
-You can test a simple exampe provide in example folder, simply run the launch script.
+You can test a simple exampe provide in repository, simply run the launch script.
 The example use bit lenght reduction approximate tecnhnique provide by [FLAP library] (https://github.com/Ghost047/Fap) 
 
 ### LICENSE ###
