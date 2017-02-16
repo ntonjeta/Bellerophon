@@ -21,7 +21,7 @@ More details of Bellerophon implementation can found on my master's thesis
 #### Requirement ####
 -------------
 
-Bellerophon requires LLVM3.9.1 compiled with following flag: 
+Bellerophon requires LLVM/Clang3.9.1 compiled with following flag: 
 
 * -DLLVM_ENABLE_CXX1Y=true
 * -DLLVM_ENABLE_RTTI=ON
@@ -37,6 +37,7 @@ Furthermore requires Genetic Algorithm framework ParadisEO avaiable at this link
     git clone https://github.com/ntonjeta/Bellerophon
     cd Bellerophon
     mkdir build
+    cd build
     cmake ../ 
     make
 
