@@ -171,7 +171,7 @@ target_link_libraries(bellerophon
                       z
                       ffi
                       edit
-                      tinfo
+                      ncurses
                       dl
                       m
                       )
