@@ -26,9 +26,18 @@ Bellerophon requires LLVM/Clang3.9.1 compiled with following flag:
 * -DLLVM_ENABLE_CXX1Y=true
 * -DLLVM_ENABLE_RTTI=ON
 
+NOTE: Bellerophon was develop and tested with X86 architecture, if you want run with other architecture you have to make some change:
+
+After install LLVM on your architecture launch:
+
+    llvm-config --componetns
+
+Take output and change in CMakeLists.txt, at llvm_map_components_to_libnames the list of components outputed from previous command.  
+
 Furthermore requires Genetic Algorithm framework ParadisEO avaiable at this link:
  
 * http://paradiseo.gforge.inria.fr/
+
 
 
 #### Build ####
