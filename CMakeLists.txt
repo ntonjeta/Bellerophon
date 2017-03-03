@@ -175,3 +175,9 @@ target_link_libraries(bellerophon
                       dl
                       m
                       )
+
+install(TARGETS bellerophon
+        RUNTIME DESTINATION /usr/local/bin
+        LIBRARY DESTINATION /usr/local/lib
+        ARCHIVE DESTINATION /usr/local/lib 
+)
