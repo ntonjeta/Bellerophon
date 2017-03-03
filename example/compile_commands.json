@@ -1,7 +1,0 @@
-[
-    {
-        "command": "c++ -c -std=c++11 -Iinclude/ -o test ../chimera/output/mutants/test.cpp/1/test.cpp", 
-        "directory": "/home/ntonjeta/Approximate/examples/flapexample/src", 
-        "file": "../chimera/output/mutants/test.cpp/1/test.cpp"
-    }
-]
