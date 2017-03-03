@@ -147,12 +147,10 @@ void tool::BellerophonTool::run(int argc, const char *argv[]) {
   // Hide options from category different from catBellerophon
   ::llvm::cl::HideUnrelatedOptions(catBellerophon);
   
-	// Initilaze the log system
-	log::BellerophonLogger::init();
- 
-	if (argc == 1) {
-    ::llvm::cl::PrintHelpMessage();
-  }
+  // Initilaze the log system
+  log::BellerophonLogger::init();
+
+  log::BellerophonLogger::verbose(::std::to_string(argc)); 
 
   // Parsing options
   ::llvm::cl::ParseCommandLineOptions(argc, argv, "Bellerophon");
@@ -162,9 +160,14 @@ void tool::BellerophonTool::run(int argc, const char *argv[]) {
     log::BellerophonLogger::initVerbose();
     log::BellerophonLogger::setVerboseLevel(9);
   }
-  
-  double tau = optTau;
-  optTau.removeArgument(); // To avoid clang complains
+
+  if(!optTau){
+    log::BellerophonLogger::error("<tau> value not insert ");
+    exit(1); 
+  }
+    double tau = optTau;
+    optTau.removeArgument(); // To avoid clang complains
+
 
   // List possible approximate technique   
   if(listTechnique){
@@ -200,14 +203,21 @@ void tool::BellerophonTool::run(int argc, const char *argv[]) {
     }
     exit(0);
   }
-  
-  ::std::string path = cDatabasePath;
+
+  ::std::string path;
+  if(!cDatabasePath.empty()){
+    path = cDatabasePath;
+  }else{  
+    log::BellerophonLogger::error("Compilation Databese Path not present");
+    exit(1);
+  }
+
   // Initialize Execution Engine 
   if (!this->Context.initExecutionEngine(path)) {
     log::BellerophonLogger::fatal("can't initializze Execution Engine");
     exit(1);
   }
-    
+   
   // Add object files
   // IMPORTANT: Objects MUST be compiled with : -fno-use-cxa-atexit
   for (const auto &objPath : objPaths) {
@@ -241,8 +251,13 @@ void tool::BellerophonTool::run(int argc, const char *argv[]) {
     exit(1);
   }
   
-  // Intialize with Report
-  ctx->readReport(Report); 
+  if(!Report.empty()){  
+    // Intialize with Report
+    ctx->readReport(Report); 
+  }else{
+    log::BellerophonLogger::error("Report path not insert");
+    exit(1);
+  }
   // Set AprxContext in Evolution
   this->Context.setAprxContext(ctx); 
   
