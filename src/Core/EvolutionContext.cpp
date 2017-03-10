@@ -290,7 +290,7 @@ double bellerophon::core::aprxEval::getError(::bellerophon::core::aprx &_aprx)
   // if error is major of tau assign high value.
 
   double error = rv.DoubleVal; 
-  if(error >= this->tau) error = DBL_MAX; 
+  //if(error >= this->tau) error = DBL_MAX; 
   return error;
 }
 
