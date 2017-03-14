@@ -289,9 +289,9 @@ double bellerophon::core::aprxEval::getError(::bellerophon::core::aprx &_aprx)
   // Constraint Evalutation, modify the fitness function. 
   // if error is major of tau assign high value.
 
-  //double error = rv.DoubleVal; 
-  //if(error >= this->tau) error = DBL_MAX; 
-  return rv.DoubleVal;
+  double error = rv.DoubleVal; 
+  if(error >= this->tau) error = DBL_MAX; 
+  return error;
 }
 
 double bellerophon::core::aprxEval::Reward(::bellerophon::core::aprx &_aprx)

@@ -61,7 +61,7 @@ void LoopAprxTechnique::applyApproximation(
   
   if (!(g == 0))  
     (*p) = g; 
-
+  else (*p) = 1;
   log::BellerophonLogger::verbose(
     "After approximation: " + ::std::to_string(*p) +
     "\n");
