@@ -59,17 +59,17 @@ class AprxObjectiveVectorTraits : public moeoObjectiveVectorTraits
 public:
   static bool minimizing (int i)
   {
-      if(i == 1 || i== 2 ) return true;
-      else return false;
+    if(i == 0 ) return true;
+    else return false;
   }
   static bool maximizing (int i)
   {
-      if( i == 0 ) return true;
-      else return false;
+    if( i == 1 ) return true;
+    else return false;
   }
   static unsigned int nObjectives ()
   {
-      return 3;
+    return 2;
   }
 };
 
@@ -120,8 +120,8 @@ public:
     if (_aprx.invalidObjectiveVector())
     {
       aprxObjectiveVector objVec;
-      objVec[0] = Reward(_aprx);
-      objVec[1] = getError(_aprx);
+      objVec[1] = Reward(_aprx);
+      objVec[0] = getError(_aprx);
       objVec[2] = Penality(_aprx);
       _aprx.objectiveVector(objVec);
     }

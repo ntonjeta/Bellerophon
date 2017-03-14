@@ -52,8 +52,8 @@
 #include <iostream>
 #include <functional>
 #include <map>
+#include <limits.h>
 #include <float.h>
-
 
 /////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                     //
@@ -289,9 +289,9 @@ double bellerophon::core::aprxEval::getError(::bellerophon::core::aprx &_aprx)
   // Constraint Evalutation, modify the fitness function. 
   // if error is major of tau assign high value.
 
-  double error = rv.DoubleVal; 
+  //double error = rv.DoubleVal; 
   //if(error >= this->tau) error = DBL_MAX; 
-  return error;
+  return rv.DoubleVal;
 }
 
 double bellerophon::core::aprxEval::Reward(::bellerophon::core::aprx &_aprx)

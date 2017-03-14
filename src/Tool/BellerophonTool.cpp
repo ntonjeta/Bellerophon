@@ -261,7 +261,6 @@ void tool::BellerophonTool::run(int argc, const char *argv[]) {
   // Set AprxContext in Evolution
   this->Context.setAprxContext(ctx); 
   
-  // TODO Read the initialization for evolution algorithm from CLI
   // Initialize Evolution Parameter and apply evolution algorithm
   ::std::string param = "";
   if (!ParamFile.empty())
