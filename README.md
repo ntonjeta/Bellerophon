@@ -49,6 +49,7 @@ Furthermore requires Genetic Algorithm framework ParadisEO avaiable at this link
     cd build
     cmake ../ 
     make
+    sudo make install
 
 #### Example ####
 -------- 
