@@ -40,8 +40,10 @@ Furthermore requires Genetic Algorithm framework ParadisEO avaiable at this link
 
 
 
-#### Build ####
+#### Quick Start ####
 --------
+
+For use bellerophon you can build it from source, as follow:
 
     git clone https://github.com/ntonjeta/Bellerophon
     cd Bellerophon
@@ -50,6 +52,14 @@ Furthermore requires Genetic Algorithm framework ParadisEO avaiable at this link
     cmake ../ 
     make
     sudo make install
+
+#### Docker Container - for compiling unenthusiastic ### 
+
+Or you can use docker image for build a [container](https://github.com/ntonjeta/iidea-Docker)
+
+#### How To Use ####
+
+
 
 #### Example ####
 -------- 
