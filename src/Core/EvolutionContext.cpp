@@ -277,7 +277,6 @@ double bellerophon::core::aprxEval::getError(::bellerophon::core::aprx &_aprx)
     for (const auto &name : loc.technique->getGlobalValueNames()) {
       addrs.push_back(this->eeHelper.getAddress(name));
     }
-    // TODO check the applicable grade of approximation
     loc.technique->applyApproximation(_aprx[i], addrs);
     i++;
   }
