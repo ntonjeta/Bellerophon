@@ -82,6 +82,18 @@ Generic Options:
   - version                                  - Display the version of this program
 
 
+Bellerophon take some input for testing the approimate variants.
+First, with -p flags it take a [compilation database](http://clang.llvm.org/docs/JSONCompilationDatabase.html),  were was defined the code in wich was applyied the approximation technique.
+With -r flag pass a report in csv format that specified were to apply the approximation technique. 
+This two input usually was geenerated from [chimera](https://github.com/ntonjeta/clang-chimera).
+
+Furthermore, Bellerophon take other input with -t flag we can specified the technique used for apply the approximation. 
+With -P flag can pass to tool a .param file that specified Genetic Algorithm parameters.
+Finaly is mandatory to specified a <tau> value for error generated with approximation.   
+
+#### Write Approximation Technique #### 
+
+Bellerophon can be extend with new approximate technique. If you want to  
 
 #### Example ####
 -------- 
