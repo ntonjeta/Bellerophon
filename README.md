@@ -91,9 +91,6 @@ Furthermore, Bellerophon take other input with -t flag we can specified the tech
 With -P flag can pass to tool a .param file that specified Genetic Algorithm parameters.
 Finaly is mandatory to specified a <tau> value for error generated with approximation.   
 
-#### Write Approximation Technique #### 
-
-Bellerophon can be extend with new approximate technique. If you want to  
 
 #### Example ####
 -------- 
