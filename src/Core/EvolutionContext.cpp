@@ -283,6 +283,7 @@ double bellerophon::core::aprxEval::getError(::bellerophon::core::aprx &_aprx)
 
   ::llvm::GenericValue rv;
   if (this->eeHelper.runFunction(rv, "BELLERO_getError") != 0){
+    bellerophon::log::BellerophonLogger::error("Cannot launch BELLERO_getError");
     exit(1);
   }
   // Constraint Evalutation, modify the fitness function. 
